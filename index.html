@@ -1,0 +1,57 @@
+
+<html>
+<head>
+<title>Random Material Generator</title>
+<link rel="shortcut icon" href="/static/rm/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/static/rm/favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="/static/rm/palette.json"></script>
+<link rel="stylesheet" type="text/css" href="/static/rm/style.css">
+</head>
+<body>
+<img src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7NndTQW9VZTlZV2s/materialdesign_principles_bold.png" style="position:fixed;top:-1000;width:0;height:0;"/>
+<header>
+<span id="time">12:30</span>
+<section id="headerBottom" style="display:flex;flex-direction:row;justify-content:space-between">
+<span id="headerTitle">Random Material Generator</span>
+<section id="headerSocial">
+<a href="http://twitter.com/codecrafted">
+<img src="/static/rm/tw.svg" width="48px" height="48px"/>
+</a>
+<a href="https://play.google.com/store/apps/developer?id=CodeCrafted&hl=en">
+<img src="/static/rm/gp.svg" width="48px" height="48px"/>
+</a>
+</section>
+</section>
+</header>
+<main>
+<section id="canvases" style="display:flex;flex-direction:column">
+<canvas id="canvas1" width="400" height="500"></canvas>
+<canvas id="canvas2" width="400" height="500"></canvas>
+</section>
+<section id="colors">
+<button id="generateRandom" onclick="startDrawing()">Generate different random combination</button>
+<h4>Manual select</h4>
+<span id="baseTitle">PRIMARY</span>
+<section id="basecolorpicker">
+<span id="exampleSq" style="display:none" class="colorSq"></span>
+</section>
+<span id="darkTitle">PRIMARY DARK</span>
+<section id="darkcolorpicker"></section>
+<span id="accentTitle">ACCENT</span>
+<section id="accentcolorpicker"></section>
+<h4>Add this to your colors.xml:</h4>
+<code id="xmlcode">
+</code>
+</section>
+</main>
+<footer>
+<span style="display:block;text-align:center;line-height:2em">Made by <a href="http://twitter.com/codecrafted">CodeCrafted</a> - Copyright 2017</span>
+</footer>
+</body>
+<script type="text/javascript" src="/static/rm/js.js"></script>
+<script type="text/javascript">
+	var analy = new XMLHttpRequest();
+	analy.open("GET", "/analytics/count/4");
+	analy.send();
+	</script>
+</html>
